@@ -1,0 +1,9 @@
+$(".neighborhood").click(function(){
+	$(".box1").slideDown(200);
+});
+$(".bedroom").click(function(){
+	$(".box2").slideDown(200);
+});
+$(".price").click(function(){
+	$(".box3").slideDown(200);
+});
