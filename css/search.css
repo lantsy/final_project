@@ -62,26 +62,47 @@ button {
 	border-radius: 10px;
 	/*width: 50px;*/
 }
-.fa-list-ul {
-	display: none;
-    font-size: 50px;
-    color: white;
-    float: right;
-    margin: 50px 50px 20px 30px;
+#menu {
+  display: none;
 }
 #wrapper {
 	width: 95%;
 	margin: 0 auto;
 }
-#search {
+.select {
+	box-sizing: border-box;
+	background-color: #8AE2FF;
+	padding: 20px;
+	width: 80%;
+	border-radius: 10px;
+	margin: 0 auto;
+	display: inline-block;
+}
+
+select {
+	border-radius: none;
+	border: 0;
+	box-shadow: none;
+	padding: 40px;
+	box-sizing: border-box;
+}
+option {
+	text-transform: uppercase;
+	color: red;
+	padding: 20px;
+}
+/*.menu1 {
+	padding: 20px;
+}*/
+/*#search {
 	box-sizing: border-box;
 	background-color: #8AE2FF;
 	padding: 40px;
 	width: 80%;
 	border-radius: 10px;
 	margin: 0 auto;
-}
-.neighborhood, .bedroom, .price {
+}*/
+./*neighborhood, .bedroom, .price {
 	padding: 30px;
 	float: left;
 	margin: 0 auto;
@@ -164,7 +185,7 @@ button {
 }
 .box1 a:hover, .box2 a:hover, .box3 a:hover{
   color: white;
-}
+}*/
 button {
 	font-family: 'Josefin Sans', sans-serif;
 	padding: 10px;

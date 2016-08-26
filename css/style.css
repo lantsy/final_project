@@ -203,3 +203,6 @@ button {
   padding: 8px;
   font-size: 17px;
 }
+#menu {
+  display: none;
+}
