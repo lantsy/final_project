@@ -1,20 +1,43 @@
+ var el1 = document.getElementById("myDropdown");
+  var el2 = document.getElementById("myDropdown2");
+  var el3 = document.getElementById("myDropdown3");
 
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
+  var elb1 = document.getElementById("elb1");
+  var elb2 = document.getElementById("elb2");
+  var elb3 = document.getElementById("elb3");
 
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
+
+  elb1.addEventListener("click", function () {
+    el2.classList.remove("show");
+    el3.classList.remove("show");
+    el1.classList.toggle("show");
+  });
+  elb2.addEventListener("click", function () {
+    el3.classList.remove("show");
+    el1.classList.remove("show");
+    el2.classList.toggle("show");
+  });
+  elb3.addEventListener("click", function () {
+    el1.classList.remove("show");
+    el2.classList.remove("show");
+    el3.classList.toggle("show");
+  });
+
+$("#burger").click(function(){
+  $(this).slideUp(100);
+  $("nav a").slideDown(100);
+  // $("nav a").display();
+});
+  // $('nav li ul').hide().removeClass('fallback');
+  // $('nav li').hover(
+  //     function () {
+  //       $('ul', this).stop().slideDown(400);
+  //     },
+  //     function () {
+  //       $('ul', this).stop().slideUp(100);
+  //     }
+  // );
+
 var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
 google.maps.event.addDomListener(window, 'load', initialize);
 function loadScript() {
